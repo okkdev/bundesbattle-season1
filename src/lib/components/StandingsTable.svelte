@@ -34,11 +34,11 @@
             <tr>
               <td
                 class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0"
-                class:text-bbyellow={i in [0, 1, 2]}>{i + 1}.</td
+                class:highlight={i in [0, 1, 2]}>{i + 1}.</td
               >
               <td
                 class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0"
-                class:text-bbyellow={i in [0, 1, 2]}>{player}</td
+                class:highlight={i in [0, 1, 2]}>{player}</td
               >
               <td class="whitespace-nowrap px-3 py-4 text-sm">
                 {#if canton}
@@ -60,3 +60,9 @@
     </div>
   </div>
 </div>
+
+<style lang="postcss">
+  .highlight {
+    @apply text-bbyellow font-semibold;
+  }
+</style>
