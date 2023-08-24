@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        bbyellow: "#f5f34a",
+      },
+    },
   },
   plugins: [],
 }
