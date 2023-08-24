@@ -33,21 +33,24 @@
           {#each standings as [player, canton, points], i}
             <tr>
               <td
-                class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0"
-                >{i + 1}.</td
+                class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0"
+                class:text-bbyellow={i in [0, 1, 2]}>{i + 1}.</td
               >
               <td
-                class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0"
-                >{player}</td
+                class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0"
+                class:text-bbyellow={i in [0, 1, 2]}>{player}</td
               >
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-300">
-                <img
-                  src="/images/wappen/{canton}.svg"
-                  alt={canton}
-                  class="h-7 w-auto"
-                />
+              <td class="whitespace-nowrap px-3 py-4 text-sm">
+                {#if canton}
+                  <img
+                    src="/images/wappen/{canton}.svg"
+                    alt={canton}
+                    title={canton}
+                    class="h-7 w-auto"
+                  />
+                {/if}
               </td>
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-300"
+              <td class="whitespace-nowrap px-3 py-4 text-lg font-semibold"
                 >{points}</td
               >
             </tr>

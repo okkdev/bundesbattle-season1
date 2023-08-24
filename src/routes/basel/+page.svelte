@@ -9,9 +9,17 @@
 <div class="flex gap-8 flex-col">
   <h1 class="font-semibold text-4xl">Basel Qualifiers</h1>
 
-  <div>
-    <div class="text-xl font-semibold">Dates:</div>
-    <DateTable dates={data.dates} />
+  <div class="flex justify-between max-w-2xl">
+    <div>
+      <div class="text-xl font-semibold">Dates:</div>
+      <DateTable dates={data.dates} />
+    </div>
+    <div>
+      <div class="text-xl font-semibold">Location:</div>
+      <p>ManaBar</p>
+      <p>Güterstrasse 99</p>
+      <p>4053 Basel</p>
+    </div>
   </div>
 
   <div>
