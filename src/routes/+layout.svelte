@@ -124,7 +124,7 @@
   {/if}
 </nav>
 
-<main class="container mx-auto mt-4 max-w-4xl flex-1">
+<main class="container mx-auto mt-4 max-w-4xl flex-1 px-2">
   <slot />
 </main>
 
