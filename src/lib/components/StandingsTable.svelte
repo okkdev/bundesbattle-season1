@@ -3,10 +3,10 @@
   export let standings = []
 </script>
 
-<div class="mt-4 flow-root">
+<div class="flow-root">
   <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
     <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-      <table class="min-w-full divide-y divide-neutral-700">
+      <table class="min-w-full">
         <thead>
           <tr>
             <th scope="col" class="relative py-3.5 pr-4 pl-3 sm:pr-0">
@@ -15,17 +15,17 @@
             <th
               scope="col"
               class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-white sm:pl-0"
-              >Player</th
+              ><span class="sr-only">Player</span></th
             >
             <th
               scope="col"
               class="px-3 py-3.5 text-left text-sm font-semibold text-white"
-              >Canton</th
+              ><span class="sr-only">Canton</span></th
             >
             <th
               scope="col"
               class="px-3 py-3.5 text-left text-sm font-semibold text-white"
-              >Points</th
+              ><span class="sr-only">Points</span></th
             >
           </tr>
         </thead>
@@ -51,7 +51,7 @@
                 {/if}
               </td>
               <td class="whitespace-nowrap px-3 py-4 text-lg font-semibold"
-                >{points}</td
+                >{points} {Number(points) > 1 ? "points" : "point"}</td
               >
             </tr>
           {/each}

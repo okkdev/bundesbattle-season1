@@ -1,7 +1,7 @@
 <img src="images/bundesbattle-banner.png" alt="BundesBattle Banner" />
 
 <div class="my-6 flex flex-col gap-3">
-  <h1 class="font-semibold text-2xl">BundesBattle Season 1</h1>
+  <h1 class="font-stencil uppercase text-3xl">BundesBattle Season 1</h1>
   <p>
     Organised by <a href="https://hardread.ch" class="text-bbyellow"
       >HardReadCH</a
@@ -9,24 +9,32 @@
     and
     <a href="https://fgcbasel.ch" class="text-bbyellow">FGC Basel</a> we bring you
     the first iteration of BundesBattle, the Fighting Game League for Switzerland!
-    For Season 1 we'll be competing in Street Fighter 6.
   </p>
+  <p>For Season 1 we'll be competing in Street Fighter 6.</p>
 
-  <h2 class="font-semibold text-xl">Format</h2>
+  <div class="flex justify-center my-6">
+    <a
+      href="https://www.start.gg/hub/bundesbattle/details"
+      class="px-3 py-2 text-lg text-slate-800 bg-bbyellow hover:bg-neutral-800 hover:text-bbyellow shadow rounded font-stencil"
+      >start.gg</a
+    >
+  </div>
+
+  <h2 class="font-stencil uppercase text-xl mt-8">Format</h2>
   <p>
     We will be running 4 qualifier tournaments at the Weeklies in <a
       href="/basel"
-      class="font-medium">Basel</a
+      class="font-semibold">Basel</a
     >
     and
-    <a href="/zurich" class="font-medium">Zürich</a>.
+    <a href="/zurich" class="font-semibold">Zürich</a>.
   </p>
   <p>There are separate leaderboards for each region.</p>
   <p>The top 3 of each leaderboard will qualify for the season finale.</p>
   <p>
     Additionally, there will be 2 <a
       href="/direct-qualifiers"
-      class="font-medium">direct qualifiers</a
+      class="font-semibold">direct qualifiers</a
     > with TheReset #8 and GamingHotel 2023.
   </p>
   <p>
@@ -47,7 +55,7 @@
     <li>6th: 1 pt</li>
   </ul>
 
-  <h2 class="font-semibold text-xl">Pricing and prizes</h2>
+  <h2 class="font-stencil uppercase text-xl mt-8">Pricing and prizes</h2>
 
   <p>The regular venue and tournament fees of each respective weekly apply.</p>
   <p>
@@ -59,7 +67,7 @@
     finale.
   </p>
 
-  <h2 class="font-semibold text-xl">Rules</h2>
+  <h2 class="font-stencil uppercase text-xl mt-8">Rules</h2>
 
   <ul class="list-disc pl-6">
     <li>All tournaments are held in a double elimination style bracket.</li>

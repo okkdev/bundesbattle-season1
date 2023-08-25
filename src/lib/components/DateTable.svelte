@@ -1,12 +1,18 @@
 <script>
-  /** @type {number[]} */
+  /** @type {Array<Array<Date|string>>} */
   export let dates
 </script>
 
-<div class="grid grid-cols-1">
-  {#each dates as date}
-    <div class="p-2" class:line-through={date < Date.now()}>
-      {new Date(date).toDateString()}
+<div class="grid grid-cols-1 gap-2">
+  {#each dates as [date, link]}
+    <div class:line-through={date < new Date(new Date().toDateString())}>
+      {#if link}
+        <a href={link} class="text-bbyellow">
+          {date.toDateString()}
+        </a>
+      {:else}
+        {date.toDateString()}
+      {/if}
     </div>
   {/each}
 </div>

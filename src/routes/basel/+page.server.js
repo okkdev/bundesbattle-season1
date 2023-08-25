@@ -28,7 +28,7 @@ export async function load({ params }) {
   })
 
   return {
-    dates: dates.data.values.map((d) => Date.parse(d)),
+    dates: dates.data.values.map((d) => [new Date(d[0]), d[1]]),
     standings: standings.data.values,
   }
 }

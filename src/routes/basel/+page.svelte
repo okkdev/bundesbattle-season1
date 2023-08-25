@@ -4,18 +4,19 @@
 
   /** @type {import('./$types').PageData} */
   export let data
+  console.log(data)
 </script>
 
 <div class="flex gap-8 flex-col">
-  <h1 class="font-semibold text-4xl">Basel Qualifiers</h1>
+  <h1 class="text-4xl font-stencil uppercase">Basel Qualifiers</h1>
 
-  <div class="flex justify-between max-w-2xl">
+  <div class="flex justify-between flex-col sm:flex-row gap-10">
     <div>
-      <div class="text-xl font-semibold">Dates:</div>
+      <div class="text-xl font-stencil uppercase">Dates</div>
       <DateTable dates={data.dates} />
     </div>
     <div>
-      <div class="text-xl font-semibold">Location:</div>
+      <div class="text-xl font-stencil uppercase">Location</div>
       <p>ManaBar</p>
       <p>Güterstrasse 99</p>
       <p>4053 Basel</p>
@@ -23,7 +24,7 @@
   </div>
 
   <div>
-    <div class="text-xl font-semibold">Standings:</div>
+    <div class="text-xl font-stencil uppercase">Standings</div>
     <StandingsTable standings={data.standings} />
   </div>
 </div>
