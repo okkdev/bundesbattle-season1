@@ -1,10 +1,10 @@
 <script>
   import StandingsTable from "$lib/components/StandingsTable.svelte"
   import DateTable from "$lib/components/DateTable.svelte"
+  import Loading from "$lib/components/Loading.svelte"
 
   /** @type {import('./$types').PageData} */
   export let data
-  console.log(data)
 </script>
 
 <div class="flex gap-8 flex-col">
@@ -13,7 +13,13 @@
   <div class="flex justify-between flex-col sm:flex-row gap-10">
     <div>
       <div class="text-xl font-stencil uppercase">Dates</div>
-      <DateTable dates={data.dates} />
+      {#await data.streamed.dates}
+        <Loading class="w-8 h-8" />
+      {:then dates}
+        <DateTable dates={dates.map((d) => [new Date(d[0]), d[1]])} />
+      {:catch e}
+        Error :(
+      {/await}
     </div>
     <div>
       <div class="text-xl font-stencil uppercase">Location</div>
@@ -25,6 +31,12 @@
 
   <div>
     <div class="text-xl font-stencil uppercase">Standings</div>
-    <StandingsTable standings={data.standings} />
+    {#await data.streamed.standings}
+      <Loading class="w-8 h-8" />
+    {:then standings}
+      <StandingsTable {standings} />
+    {:catch e}
+      Error :(
+    {/await}
   </div>
 </div>

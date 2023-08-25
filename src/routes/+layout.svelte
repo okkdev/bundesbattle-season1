@@ -1,6 +1,7 @@
 <script>
   import "../app.css"
   import { page } from "$app/stores"
+  import { clickOutside } from "$lib/clickOutside.js"
 
   let mobileMenuOpen = false
 </script>
@@ -9,7 +10,11 @@
   <title>BundesBattle Season 1</title>
 </svelte:head>
 
-<nav class="bg-neutral-800">
+<nav
+  class="bg-neutral-800"
+  use:clickOutside
+  on:click_outside={() => (mobileMenuOpen = false)}
+>
   <div class="mx-auto max-w-7xl px-2 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center">
@@ -137,7 +142,7 @@
   <div class="flex flex-row gap-2 items-center justify-center">
     A project by <a href="https://hardread.ch"
       ><img
-        src="images/hardread-logo.png"
+        src="images/hardread-logo.webp"
         alt="Hardread Logo"
         class="h-5 w-auto"
       /></a
