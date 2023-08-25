@@ -4,6 +4,10 @@
   let mobileMenuOpen = false
 </script>
 
+<svelte:head>
+  <title>BundesBattle Season 1</title>
+</svelte:head>
+
 <nav class="bg-neutral-800">
   <div class="mx-auto max-w-7xl px-2 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
@@ -120,6 +124,25 @@
   {/if}
 </nav>
 
-<main class="container mx-auto mt-4 max-w-4xl">
+<main class="container mx-auto mt-4 max-w-4xl flex-1">
   <slot />
 </main>
+
+<footer
+  class="bg-neutral-900 shadow p-8 mt-4 flex flex-row gap-2 items-center justify-center text-sm"
+>
+  A project by <a href="https://hardread.ch"
+    ><img
+      src="images/hardread-logo.png"
+      alt="Hardread Logo"
+      class="h-5 w-auto"
+    /></a
+  >
+  and <a href="https://fgcbasel.ch" class="text-bbyellow">FGC Basel</a>
+</footer>
+
+<style lang="postcss">
+  :global(body) {
+    @apply flex flex-col min-h-screen;
+  }
+</style>
