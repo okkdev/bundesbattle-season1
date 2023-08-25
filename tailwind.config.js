@@ -11,6 +11,9 @@ export default {
       fontFamily: {
         stencil: ["Black Ops One", ...defaultTheme.fontFamily.sans],
       },
+      aria: {
+        current: 'current="true"',
+      },
     },
   },
   plugins: [],

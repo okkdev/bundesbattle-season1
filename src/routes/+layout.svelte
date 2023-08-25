@@ -1,5 +1,6 @@
 <script>
   import "../app.css"
+  import { page } from "$app/stores"
 
   let mobileMenuOpen = false
 </script>
@@ -16,23 +17,24 @@
           <div class="flex space-x-4">
             <a
               href="/basel"
-              class="hover:bg-bbyellow hover:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
-              >Basel</a
+              class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
+              aria-current={$page.url.pathname === "/basel"}>Basel</a
             >
             <a
               href="/zurich"
-              class="hover:bg-bbyellow hover:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
-              >Zürich</a
+              class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
+              aria-current={$page.url.pathname === "/zurich"}>Zürich</a
             >
             <a
               href="/direct-qualifiers"
-              class="hover:bg-bbyellow hover:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
+              class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
+              aria-current={$page.url.pathname === "/direct-qualifiers"}
               >Direct Qualifiers</a
             >
             <a
               href="/finals"
-              class="hover:bg-bbyellow hover:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
-              >Finals</a
+              class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
+              aria-current={$page.url.pathname === "/finals"}>Finals</a
             >
           </div>
         </div>
@@ -101,23 +103,24 @@
       <div class="space-y-1 px-2 pb-3 pt-2">
         <a
           href="/basel"
-          class="hover:bg-bbyellow hover:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
-          >Basel</a
+          class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
+          aria-current={$page.url.pathname === "/basel"}>Basel</a
         >
         <a
           href="/zurich"
-          class="hover:bg-bbyellow hover:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
-          >Zürich</a
+          class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
+          aria-current={$page.url.pathname === "/zurich"}>Zürich</a
         >
         <a
           href="/direct-qualifiers"
-          class="hover:bg-bbyellow hover:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
+          class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
+          aria-current={$page.url.pathname === "/direct-qualifiers"}
           >Direct Qualifiers</a
         >
         <a
           href="/finals"
-          class="hover:bg-bbyellow hover:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
-          >Finals</a
+          class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
+          aria-current={$page.url.pathname === "/finals"}>Finals</a
         >
       </div>
     </div>
