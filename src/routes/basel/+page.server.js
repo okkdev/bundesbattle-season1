@@ -1,4 +1,3 @@
-import { error } from "@sveltejs/kit"
 import { fetchRange } from "$lib/sheetsAPI"
 
 /** @type {import('./$types').PageServerLoad} */
