@@ -8,6 +8,37 @@
 
 <svelte:head>
   <title>BundesBattle Season 1</title>
+  <meta name="title" content="BundesBattle Season 1" />
+  <meta
+    name="description"
+    content="The Swiss Street Fighter 6 league with offline qualifiers in Basel and Zürich!"
+  />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bundesbattle.ch/" />
+  <meta property="og:title" content="BundesBattle Season 1" />
+  <meta
+    property="og:description"
+    content="The Swiss Street Fighter 6 league with offline qualifiers in Basel and Zürich!"
+  />
+  <meta
+    property="og:image"
+    content="https://bundesbattle.ch/images/bundesbattle-banner.png"
+  />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://bundesbattle.ch/" />
+  <meta property="twitter:title" content="BundesBattle Season 1" />
+  <meta
+    property="twitter:description"
+    content="The Swiss Street Fighter 6 league with offline qualifiers in Basel and Zürich!"
+  />
+  <meta
+    property="twitter:image"
+    content="https://bundesbattle.ch/images/bundesbattle-banner.png"
+  />
 </svelte:head>
 
 <nav
@@ -15,30 +46,30 @@
   use:clickOutside
   on:click_outside={() => (mobileMenuOpen = false)}
 >
-  <div class="mx-auto max-w-7xl px-2 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
-      <div class="absolute inset-y-0 left-0 flex items-center">
+  <div class="px-2 mx-auto max-w-7xl lg:px-8">
+    <div class="flex relative justify-between items-center h-16">
+      <div class="flex absolute inset-y-0 left-0 items-center">
         <div class="hidden lg:ml-6 lg:block">
           <div class="flex space-x-4">
             <a
               href="/basel"
-              class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
+              class="px-3 py-2 text-sm font-medium rounded-md hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800"
               aria-current={$page.url.pathname === "/basel"}>Basel</a
             >
             <a
               href="/zurich"
-              class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
+              class="px-3 py-2 text-sm font-medium rounded-md hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800"
               aria-current={$page.url.pathname === "/zurich"}>Zürich</a
             >
             <a
               href="/direct-qualifiers"
-              class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
+              class="px-3 py-2 text-sm font-medium rounded-md hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800"
               aria-current={$page.url.pathname === "/direct-qualifiers"}
               >Direct Qualifiers</a
             >
             <a
               href="/finals"
-              class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 rounded-md px-3 py-2 text-sm font-medium"
+              class="px-3 py-2 text-sm font-medium rounded-md hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800"
               aria-current={$page.url.pathname === "/finals"}>Finals</a
             >
           </div>
@@ -47,7 +78,7 @@
         <!-- Mobile menu button-->
         <button
           type="button"
-          class="relative inline-flex items-center justify-center rounded-md p-2 hover:bg-bbyellow lg:hidden hover:text-slate-800"
+          class="inline-flex relative justify-center items-center p-2 rounded-md hover:bg-bbyellow lg:hidden hover:text-slate-800"
           aria-controls="mobile-menu"
           aria-expanded="false"
           on:click={() => (mobileMenuOpen = !mobileMenuOpen)}
@@ -56,7 +87,7 @@
           <span class="sr-only">Open main menu</span>
           {#if mobileMenuOpen}
             <svg
-              class="block h-6 w-6"
+              class="block w-6 h-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
@@ -71,7 +102,7 @@
             </svg>
           {:else}
             <svg
-              class="block h-6 w-6"
+              class="block w-6 h-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
@@ -88,13 +119,13 @@
         </button>
       </div>
 
-      <div class="flex flex-1 items-center justify-center">
+      <div class="flex flex-1 justify-center items-center">
         <div class="flex flex-shrink-0 items-center">
           <a href="/">
             <img
               src="images/bundesbattle-logo.svg"
               alt="BundesBattle Logo"
-              class="h-8 w-auto"
+              class="w-auto h-8"
             />
           </a>
         </div>
@@ -105,26 +136,26 @@
   {#if mobileMenuOpen}
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="lg:hidden" id="mobile-menu">
-      <div class="space-y-1 px-2 pb-3 pt-2">
+      <div class="px-2 pt-2 pb-3 space-y-1">
         <a
           href="/basel"
-          class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
+          class="block px-3 py-2 text-base font-medium rounded-md hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800"
           aria-current={$page.url.pathname === "/basel"}>Basel</a
         >
         <a
           href="/zurich"
-          class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
+          class="block px-3 py-2 text-base font-medium rounded-md hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800"
           aria-current={$page.url.pathname === "/zurich"}>Zürich</a
         >
         <a
           href="/direct-qualifiers"
-          class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
+          class="block px-3 py-2 text-base font-medium rounded-md hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800"
           aria-current={$page.url.pathname === "/direct-qualifiers"}
           >Direct Qualifiers</a
         >
         <a
           href="/finals"
-          class="hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800 block rounded-md px-3 py-2 text-base font-medium"
+          class="block px-3 py-2 text-base font-medium rounded-md hover:bg-bbyellow hover:text-slate-800 aria-current:bg-bbyellow aria-current:text-slate-800"
           aria-current={$page.url.pathname === "/finals"}>Finals</a
         >
       </div>
@@ -132,19 +163,19 @@
   {/if}
 </nav>
 
-<main class="container mx-auto mt-4 max-w-4xl flex-1 px-2">
+<main class="container flex-1 px-2 mx-auto mt-4 max-w-4xl">
   <slot />
 </main>
 
 <footer
-  class="bg-neutral-900 shadow pt-8 pb-4 mt-4 text-sm flex flex-col gap-5 items-center justify-center"
+  class="flex flex-col gap-5 justify-center items-center pt-8 pb-4 mt-4 text-sm shadow bg-neutral-900"
 >
-  <div class="flex flex-row gap-2 items-center justify-center">
+  <div class="flex flex-row gap-2 justify-center items-center">
     A project by <a href="https://hardread.ch"
       ><img
         src="images/hardread-logo.webp"
         alt="Hardread Logo"
-        class="h-5 w-auto"
+        class="w-auto h-5"
       /></a
     >
     and <a href="https://fgcbasel.ch" class="text-bbyellow">FGC Basel</a>
@@ -154,7 +185,7 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        class="h-8 w-8"
+        class="w-8 h-8"
         ><path
           fill="currentColor"
           d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z"
