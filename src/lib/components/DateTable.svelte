@@ -7,7 +7,7 @@
   {#each dates as [date, link]}
     <div class:line-through={date < new Date(new Date().toDateString())}>
       {#if link}
-        <a href={link} class="text-bbyellow">
+        <a href={link} target="_blank" class="text-bbyellow">
           {date.toDateString()}
         </a>
       {:else}

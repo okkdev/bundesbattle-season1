@@ -162,7 +162,7 @@
   class="flex flex-col gap-5 justify-center items-center pt-8 pb-4 mt-4 text-sm shadow bg-neutral-900"
 >
   <div class="flex flex-row gap-2 justify-center items-center">
-    A project by <a href="https://hardread.ch"
+    A project by <a href="https://hardread.ch" target="_blank"
       ><img
         src="images/hardread-logo.webp"
         alt="Hardread Logo"

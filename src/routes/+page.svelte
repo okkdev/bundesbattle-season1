@@ -1,26 +1,31 @@
 <img src="images/bundesbattle-banner.png" alt="BundesBattle Banner" />
 
-<div class="my-6 flex flex-col gap-3">
-  <h1 class="font-stencil uppercase text-3xl">BundesBattle Season 1</h1>
+<div class="flex flex-col gap-3 my-6">
+  <h1 class="text-3xl uppercase font-stencil">BundesBattle Season 1</h1>
   <p>
-    Organised by <a href="https://hardread.ch" class="text-bbyellow"
-      >HardReadCH</a
+    Organised by <a
+      href="https://hardread.ch"
+      target="_blank"
+      class="text-bbyellow">HardReadCH</a
     >
     and
-    <a href="https://fgcbasel.ch" class="text-bbyellow">FGC Basel</a> we bring you
-    the first iteration of BundesBattle, the Fighting Game League for Switzerland!
+    <a href="https://fgcbasel.ch" target="_blank" class="text-bbyellow"
+      >FGC Basel</a
+    > we bring you the first iteration of BundesBattle, the Fighting Game League
+    for Switzerland!
   </p>
   <p>For Season 1 we'll be competing in Street Fighter 6.</p>
 
   <div class="flex justify-center my-6">
     <a
       href="https://www.start.gg/hub/bundesbattle/details"
-      class="px-3 py-2 text-lg text-slate-800 bg-bbyellow hover:bg-neutral-800 hover:text-bbyellow shadow rounded font-stencil"
+      target="_blank"
+      class="px-3 py-2 text-lg rounded shadow text-slate-800 bg-bbyellow hover:bg-neutral-800 hover:text-bbyellow font-stencil"
       >start.gg</a
     >
   </div>
 
-  <h2 class="font-stencil uppercase text-xl mt-8">Format</h2>
+  <h2 class="mt-8 text-xl uppercase font-stencil">Format</h2>
   <p>
     We will be running 4 qualifier tournaments at the Weeklies in <a
       href="/basel"
@@ -46,7 +51,7 @@
     leaderboards and the leftover spots are distributed to the next placements.
   </p>
   <p>Points distributed at the qualifers:</p>
-  <ul class="list-disc pl-6">
+  <ul class="pl-6 list-disc">
     <li>1st: 8 pts</li>
     <li>2nd: 6 pts</li>
     <li>3rd: 4 pts</li>
@@ -55,7 +60,7 @@
     <li>6th: 1 pt</li>
   </ul>
 
-  <h2 class="font-stencil uppercase text-xl mt-8">Pricing and prizes</h2>
+  <h2 class="mt-8 text-xl uppercase font-stencil">Pricing and prizes</h2>
 
   <p>The regular venue and tournament fees of each respective weekly apply.</p>
   <p>
@@ -67,9 +72,9 @@
     finale.
   </p>
 
-  <h2 class="font-stencil uppercase text-xl mt-8">Rules</h2>
+  <h2 class="mt-8 text-xl uppercase font-stencil">Rules</h2>
 
-  <ul class="list-disc pl-6">
+  <ul class="pl-6 list-disc">
     <li>All tournaments are held in a double elimination style bracket.</li>
     <li>
       The controller may not send simultaneous opposite cardinal directions
