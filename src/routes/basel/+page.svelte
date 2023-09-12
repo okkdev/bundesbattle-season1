@@ -1,7 +1,6 @@
 <script>
   import StandingsTable from "$lib/components/StandingsTable.svelte"
   import DateTable from "$lib/components/DateTable.svelte"
-  import Loading from "$lib/components/Loading.svelte"
 
   /** @type {import('./$types').PageData} */
   export let data

@@ -1,7 +1,6 @@
 <script>
   /** @type {import('./$types').PageData} */
   export let data
-  console.log(data)
 </script>
 
 <div class="grid grid-cols-1 gap-10 mx-auto max-w-4xl sm:grid-cols-2">
