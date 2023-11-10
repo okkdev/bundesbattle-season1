@@ -58,7 +58,7 @@
   </div>
 </div>
 
-<div class="flex flex-col gap-3 mx-auto my-8 max-w-3xl">
+<div class="flex flex-col gap-3 my-8">
   <div class="text-2xl text-center uppercase font-stencil">
     Join the Battle at BundesBattle Season 1 Finals!
   </div>
@@ -114,7 +114,9 @@
   </table>
 </div>
 
-<div class="grid grid-cols-2 gap-5 justify-items-center items-center my-12">
+<div
+  class="grid grid-cols-2 gap-5 justify-items-center items-center px-3 mx-auto my-12 max-w-xl"
+>
   <div class="col-span-2 text-2xl uppercase font-stencil">Finalists</div>
 
   <div class="grid grid-cols-4 gap-5">
