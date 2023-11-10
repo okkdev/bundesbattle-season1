@@ -1,4 +1,6 @@
-<img src="images/bundesbattle-banner-final.png" alt="BundesBattle Banner" />
+<a href="/finals">
+  <img src="images/bundesbattle-banner-final.png" alt="BundesBattle Banner" />
+</a>
 
 <div class="flex flex-col gap-3 my-6">
   <h1 class="text-3xl uppercase font-stencil">BundesBattle Season 1</h1>
