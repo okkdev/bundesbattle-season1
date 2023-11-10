@@ -1,4 +1,4 @@
-<img src="images/bundesbattle-banner.png" alt="BundesBattle Banner" />
+<img src="images/bundesbattle-banner-final.png" alt="BundesBattle Banner" />
 
 <div class="flex flex-col gap-3 my-6">
   <h1 class="text-3xl uppercase font-stencil">BundesBattle Season 1</h1>
@@ -16,13 +16,22 @@
   </p>
   <p>For Season 1 we'll be competing in Street Fighter 6.</p>
 
-  <div class="flex justify-center my-6">
+  <!-- <div class="flex justify-center my-6">
     <a
       href="https://www.start.gg/hub/bundesbattle/details"
       target="_blank"
       class="px-3 py-2 text-lg rounded shadow text-slate-800 bg-bbyellow hover:bg-neutral-800 hover:text-bbyellow font-stencil"
       >start.gg</a
     >
+  </div> -->
+
+  <div class="flex justify-center my-6">
+    <a
+      href="/finals"
+      class="text-5xl font-stencil text-bbyellow hover:text-yellow-300"
+    >
+      Check out the Finals!
+    </a>
   </div>
 
   <h2 class="mt-8 text-xl uppercase font-stencil">Format</h2>
