@@ -26,7 +26,7 @@
   countPrizepool()
 </script>
 
-<div class="flex flex-col gap-3 justify-center items-center mt-4">
+<div class="flex flex-col items-center justify-center gap-3 mt-4">
   <div class="text-center">
     <div class="text-5xl uppercase md:text-7xl font-stencil text-bbyellow">
       Grand Finals
@@ -50,7 +50,7 @@
   <div class="text-center">
     <div class="text-5xl font-semiboldbold font-stencil">
       CHF <div
-        class="inline-block text-7xl font-bold tabular-nums text-bbyellow"
+        class="inline-block font-bold text-7xl tabular-nums text-bbyellow"
       >
         {counter}
       </div>
@@ -89,17 +89,29 @@
   </p>
 </div>
 
+<div class="flex justify-center mb-12">
+  <!-- href="https://www.start.gg/hub/bundesbattle/details" -->
+  <!-- target="_blank" -->
+  <!-- class="px-4 py-3 text-2xl rounded shadow text-slate-800 bg-bbyellow hover:bg-neutral-800 hover:text-bbyellow font-stencil" -->
+  <button
+    class="px-4 py-3 text-2xl rounded shadow opacity-60 bg-bbyellow text-slate-800 font-stencil"
+    disabled
+  >
+    LCQ Signup (coming soon)
+  </button>
+</div>
+
 <div class="my-8">
-  <table class="mx-auto w-full table-auto md:w-1/2">
+  <table class="w-full mx-auto table-auto md:w-1/2">
     <thead>
       <tr>
         <th />
         <th class="text-xl text-left uppercase font-stencil">Program</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="text-lg">
       <tr>
-        <td>13:30</td>
+        <td>13:00</td>
         <td>Door opening</td>
       </tr>
       <tr>
@@ -115,42 +127,49 @@
 </div>
 
 <div
-  class="grid grid-cols-2 gap-5 justify-items-center items-center px-3 mx-auto my-12 max-w-xl"
+  class="grid items-center max-w-xl grid-cols-2 gap-5 px-3 mx-auto my-12 justify-items-center"
 >
   <div class="col-span-2 text-2xl uppercase font-stencil">Finalists</div>
 
+  <div class="text-xl uppercase font-stencil">LCQ Group 1</div>
+  <div class="text-xl uppercase font-stencil">LCQ Group 2</div>
+
   <div class="grid grid-cols-4 gap-5">
+    <img
+      src="/images/wappen/ZH.svg"
+      alt="ZH"
+      title="Zurich"
+      class="w-auto mr-4 justify-self-end h-7"
+    />
+    <div class="col-span-3 font-bold md:text-xl text-bbyellow">
+      HR Calamitas
+    </div>
+
     <img
       src="/images/wappen/BE.svg"
       alt="BE"
       title="Bern"
-      class="justify-self-end mr-4 w-auto h-7"
+      class="w-auto mr-4 justify-self-end h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">Leek</div>
 
     <img
-      src="/images/wappen/VD.svg"
-      alt="VD"
-      title="Vaud"
-      class="justify-self-end mr-4 w-auto h-7"
+      src="/images/wappen/ZH.svg"
+      alt="ZH"
+      title="Zurich"
+      class="w-auto mr-4 justify-self-end h-7"
     />
-    <div class="col-span-3 font-bold md:text-xl text-bbyellow">Elbowings</div>
+    <div class="col-span-3 font-bold md:text-xl text-bbyellow">
+      HR Saltseiya
+    </div>
 
     <img
       src="/images/wappen/LU.svg"
       alt="LU"
       title="Lucern"
-      class="justify-self-end mr-4 w-auto h-7"
+      class="w-auto mr-4 justify-self-end h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">Kyuu</div>
-
-    <img
-      src="/images/wappen/SG.svg"
-      alt="SG"
-      title="St. Gallen"
-      class="justify-self-end mr-4 w-auto h-7"
-    />
-    <div class="col-span-3 font-bold md:text-xl text-bbyellow">FiveJaw</div>
 
     <div class="col-span-4 font-bold text-center md:text-xl text-bbyellow">
       LCQ Slot
@@ -159,40 +178,37 @@
 
   <div class="grid grid-cols-4 gap-5">
     <img
-      src="/images/wappen/ZH.svg"
-      alt="ZH"
-      title="Zurich"
-      class="justify-self-end mr-4 w-auto h-7"
+      src="/images/wappen/SG.svg"
+      alt="SG"
+      title="St. Gallen"
+      class="w-auto mr-4 justify-self-end h-7"
     />
-    <div class="col-span-3 font-bold md:text-xl text-bbyellow">HR Direktor</div>
+    <div class="col-span-3 font-bold md:text-xl text-bbyellow">FiveJaw</div>
 
     <img
       src="/images/wappen/ZH.svg"
       alt="ZH"
       title="Zurich"
-      class="justify-self-end mr-4 w-auto h-7"
+      class="w-auto mr-4 justify-self-end h-7"
     />
-    <div class="col-span-3 font-bold md:text-xl text-bbyellow">
-      HR Saltseiya
-    </div>
+    <div class="col-span-3 font-bold md:text-xl text-bbyellow">HR Direktor</div>
+
+    <img
+      src="/images/wappen/VD.svg"
+      alt="VD"
+      title="Vaud"
+      class="w-auto mr-4 justify-self-end h-7"
+    />
+    <div class="col-span-3 font-bold md:text-xl text-bbyellow">Elbowings</div>
 
     <img
       src="/images/wappen/AG.svg"
       alt="AG"
       title="Aargau"
-      class="justify-self-end mr-4 w-auto h-7"
+      class="w-auto mr-4 justify-self-end h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">HR Valiser</div>
 
-    <img
-      src="/images/wappen/ZH.svg"
-      alt="ZH"
-      title="Zurich"
-      class="justify-self-end mr-4 w-auto h-7"
-    />
-    <div class="col-span-3 font-bold md:text-xl text-bbyellow">
-      HR Calamitas
-    </div>
     <div class="col-span-4 font-bold text-center md:text-xl text-bbyellow">
       LCQ Slot
     </div>
@@ -240,6 +256,7 @@
       <li>Single Elimination</li>
       <li>Semi-finals and 3rd place match are Best of 7 (First to 4)</li>
       <li>Final is Best of 9 (First to 5)</li>
+      <li>Prize pool split is 50/25/15/10</li>
     </ul>
   </li>
 </ul>
