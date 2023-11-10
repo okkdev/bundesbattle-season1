@@ -131,8 +131,8 @@
 >
   <div class="col-span-2 text-2xl uppercase font-stencil">Finalists</div>
 
-  <div class="text-xl uppercase font-stencil">LCQ Group 1</div>
-  <div class="text-xl uppercase font-stencil">LCQ Group 2</div>
+  <div class="text-xl uppercase font-stencil">Group 1</div>
+  <div class="text-xl uppercase font-stencil">Group 2</div>
 
   <div class="grid grid-cols-4 gap-5">
     <img
