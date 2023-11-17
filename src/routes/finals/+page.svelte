@@ -260,3 +260,11 @@
     </ul>
   </li>
 </ul>
+
+<div class="my-8 text-2xl text-center uppercase font-stencil">Sponsors</div>
+
+<div class="flex items-center justify-center">
+  <a href="https://cyon.ch" target="_blank">
+    <img class="max-w-md" src="/images/cyon_white.png" alt="cyon GmbH" />
+  </a>
+</div>
