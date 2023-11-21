@@ -26,7 +26,7 @@
   countPrizepool()
 </script>
 
-<div class="flex flex-col items-center justify-center gap-3 mt-4">
+<div class="flex flex-col gap-3 justify-center items-center mt-4">
   <div class="text-center">
     <div class="text-5xl uppercase md:text-7xl font-stencil text-bbyellow">
       Grand Finals
@@ -50,7 +50,7 @@
   <div class="text-center">
     <div class="text-5xl font-semiboldbold font-stencil">
       CHF <div
-        class="inline-block font-bold text-7xl tabular-nums text-bbyellow"
+        class="inline-block text-7xl font-bold tabular-nums text-bbyellow"
       >
         {counter}
       </div>
@@ -90,19 +90,17 @@
 </div>
 
 <div class="flex justify-center mb-12">
-  <!-- href="https://www.start.gg/hub/bundesbattle/details" -->
-  <!-- target="_blank" -->
-  <!-- class="px-4 py-3 text-2xl rounded shadow text-slate-800 bg-bbyellow hover:bg-neutral-800 hover:text-bbyellow font-stencil" -->
-  <button
-    class="px-4 py-3 text-2xl rounded shadow opacity-60 bg-bbyellow text-slate-800 font-stencil"
-    disabled
+  <a
+    href="https://www.start.gg/tournament/bundesbattle-2023-finals/details"
+    target="_blank"
+    class="px-4 py-3 text-2xl rounded shadow text-slate-800 bg-bbyellow hover:bg-neutral-800 hover:text-bbyellow font-stencil"
   >
-    LCQ Signup (coming soon)
-  </button>
+    LCQ Signup
+  </a>
 </div>
 
 <div class="my-8">
-  <table class="w-full mx-auto table-auto md:w-1/2">
+  <table class="mx-auto w-full table-auto md:w-1/2">
     <thead>
       <tr>
         <th />
@@ -127,7 +125,7 @@
 </div>
 
 <div
-  class="grid items-center max-w-xl grid-cols-2 gap-5 px-3 mx-auto my-12 justify-items-center"
+  class="grid grid-cols-2 gap-5 justify-items-center items-center px-3 mx-auto my-12 max-w-xl"
 >
   <div class="col-span-2 text-2xl uppercase font-stencil">Finalists</div>
 
@@ -139,7 +137,7 @@
       src="/images/wappen/ZH.svg"
       alt="ZH"
       title="Zurich"
-      class="w-auto mr-4 justify-self-end h-7"
+      class="justify-self-end mr-4 w-auto h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">
       HR Calamitas
@@ -149,7 +147,7 @@
       src="/images/wappen/BE.svg"
       alt="BE"
       title="Bern"
-      class="w-auto mr-4 justify-self-end h-7"
+      class="justify-self-end mr-4 w-auto h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">Leek</div>
 
@@ -157,7 +155,7 @@
       src="/images/wappen/ZH.svg"
       alt="ZH"
       title="Zurich"
-      class="w-auto mr-4 justify-self-end h-7"
+      class="justify-self-end mr-4 w-auto h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">
       HR Saltseiya
@@ -167,7 +165,7 @@
       src="/images/wappen/LU.svg"
       alt="LU"
       title="Lucern"
-      class="w-auto mr-4 justify-self-end h-7"
+      class="justify-self-end mr-4 w-auto h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">Kyuu</div>
 
@@ -181,7 +179,7 @@
       src="/images/wappen/SG.svg"
       alt="SG"
       title="St. Gallen"
-      class="w-auto mr-4 justify-self-end h-7"
+      class="justify-self-end mr-4 w-auto h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">FiveJaw</div>
 
@@ -189,7 +187,7 @@
       src="/images/wappen/ZH.svg"
       alt="ZH"
       title="Zurich"
-      class="w-auto mr-4 justify-self-end h-7"
+      class="justify-self-end mr-4 w-auto h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">HR Direktor</div>
 
@@ -197,7 +195,7 @@
       src="/images/wappen/VD.svg"
       alt="VD"
       title="Vaud"
-      class="w-auto mr-4 justify-self-end h-7"
+      class="justify-self-end mr-4 w-auto h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">Elbowings</div>
 
@@ -205,7 +203,7 @@
       src="/images/wappen/AG.svg"
       alt="AG"
       title="Aargau"
-      class="w-auto mr-4 justify-self-end h-7"
+      class="justify-self-end mr-4 w-auto h-7"
     />
     <div class="col-span-3 font-bold md:text-xl text-bbyellow">HR Valiser</div>
 
@@ -263,7 +261,7 @@
 
 <div class="my-8 text-2xl text-center uppercase font-stencil">Sponsors</div>
 
-<div class="flex items-center justify-center">
+<div class="flex justify-center items-center">
   <a href="https://cyon.ch" target="_blank">
     <img class="max-w-md" src="/images/cyon_white.png" alt="cyon GmbH" />
   </a>
