@@ -263,6 +263,6 @@
 
 <div class="flex justify-center items-center">
   <a href="https://cyon.ch" target="_blank">
-    <img class="max-w-md" src="/images/cyon_white.png" alt="cyon GmbH" />
+    <img class="md:max-w-md" src="/images/cyon_white.png" alt="cyon GmbH" />
   </a>
 </div>
