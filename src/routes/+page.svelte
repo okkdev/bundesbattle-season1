@@ -27,6 +27,20 @@
     >
   </div> -->
 
+  <div
+    style="padding-top: 56.25%; overflow: hidden; position: relative;"
+    class="my-6"
+  >
+    <iframe
+      style="position: absolute; left: 0; top: 0; border: 0; width: 100%; height: 100%; overflow: hidden;"
+      src="https://www.youtube-nocookie.com/embed/rxR_NsKAOIc"
+      title="Finals Trailer"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+      allowfullscreen
+    />
+  </div>
+
   <div class="flex justify-center my-6">
     <a
       href="/finals"
