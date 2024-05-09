@@ -1,20 +1,11 @@
-<a href="/finals">
+<!-- <a href="/finals">
   <img src="images/bundesbattle-banner-final.png" alt="BundesBattle Banner" />
-</a>
+</a> -->
 
 <div class="flex flex-col gap-3 my-6">
-  <h1 class="text-3xl uppercase font-stencil">BundesBattle Season 1</h1>
+  <h1 class="text-3xl uppercase font-stencil">BundesBattle Season 2 Announced!</h1>
   <p>
-    Organised by <a
-      href="https://hardread.ch"
-      target="_blank"
-      class="text-bbyellow">HardReadCH</a
-    >
-    and
-    <a href="https://fgcbasel.ch" target="_blank" class="text-bbyellow"
-      >FGC Basel</a
-    > we bring you the first iteration of BundesBattle, the Fighting Game League
-    for Switzerland!
+    Updated website in the works.
   </p>
   <p>For Season 1 we'll be competing in Street Fighter 6.</p>
 
